@@ -25,4 +25,12 @@ contract Storage {
     function retrieve() public view returns (uint256){
         return number;
     }
+    
+    /**
+     * @return calc value number*val 
+     */
+    function calc(uint256 val) public view returns(uint256) {
+        return number*val;
+    }
+     
 }
